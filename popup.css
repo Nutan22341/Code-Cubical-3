@@ -1,0 +1,91 @@
+/* Set a gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);  /* Light blue gradient */
+    font-family: 'Roboto', sans-serif;  /* Modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for form elements */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;  /* Softer, rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+    text-align: center;
+    width: 200px;
+    animation: fadeIn 1s ease-in-out;  /* Fade-in animation for elegance */
+}
+
+/* Title styling */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Form group for label and select */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Input field (select) styling */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;  /* Rounded edges for a modern look */
+    background-color: #fafafa;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;  /* Smooth transition for interaction */
+}
+
+/* Input field hover effect */
+.input-field:hover, .input-field:focus {
+    border-color: #2193b0;  /* Change border color on focus */
+    outline: none;
+}
+
+/* Summarize button styling */
+.summarize-btn {
+    background-color: #ff6f61;  /* Coral button for contrast */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;  /* More rounded for a soft button */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the button */
+.summarize-btn:hover {
+    background-color: #ff3f31;  /* Darker coral on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Elevation effect on hover */
+}
+
+/* Center the form inside the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

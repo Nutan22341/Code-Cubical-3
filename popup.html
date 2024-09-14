@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Popup</title>
-</head>
-<body>
-  <h1></h1>
-  <button id="summarize">Click me</button>
-  <script src="popup.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summarize</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Select Language</h2>
+      <div class="form-group">
+        <label for="language">Choose a language:</label>
+        <select id="language" class="input-field">
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="french">French</option>
+        </select>
+      </div>
+      <button id="summarize" class="summarize-btn">Summarize</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>
